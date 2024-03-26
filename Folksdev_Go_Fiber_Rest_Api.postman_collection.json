@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "6a6e96e6-e152-4076-8971-cffeebc5cbe6",
+		"name": "Folksdev_Go_Fiber_Rest_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13066378"
+	},
+	"item": [
+		{
+			"name": "First Get Endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "First Parameterized Endpoint",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CorrelationId",
+						"value": "4c9e8a08-2f57-443b-8e65-b4ff742d5655",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "First Post Endpoint",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CorrelationId",
+						"value": "4c9e8a08-2f57-443b-8e65-b4ff742d5655",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Muhammed\",\n    \"lastName\": \"Sedef\",\n    \"email\": \"muhammet@gmail.com\",\n    \"password\": \"12345678\",\n    \"age\": 27\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
