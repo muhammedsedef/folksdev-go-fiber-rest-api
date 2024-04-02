@@ -1,0 +1,7 @@
+__debug_bin
+.vscode
+/.idea
+.DS_Store
+vendor/
+folksdev-go-fiber-rest-api
+pact.log
