@@ -1,6 +1,6 @@
 __debug_bin
 .vscode
-.idea
+../.idea
 .DS_Store
 vendor/
 folksdev-go-fiber-rest-api

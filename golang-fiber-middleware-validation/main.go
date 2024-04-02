@@ -132,10 +132,10 @@ func main() {
 			var errorDetailList []ErrorResponseDetail
 
 			for _, validationError := range errors {
-				var errorDetail ErrorResponseDetail
-				errorDetail.FieldName = validationError.Field
-				errorDetail.Description = fmt.Sprintf("%s field has en error because %s%s", validationError.Field, validationErrorDescriptionMap[validationError.Tag], validationError.Param)
-				errorDetailList = append(errorDetailList, errorDetail)
+				errorDetailList = append(errorDetailList, ErrorResponseDetail{
+					FieldName:   validationError.Field,
+					Description: fmt.Sprintf("%s field has en error because %s%s", validationError.Field, validationErrorDescriptionMap[validationError.Tag], validationError.Param),
+				})
 			}
 			errorResponse.Status = http.StatusBadRequest
 			errorResponse.ErrorDetail = errorDetailList
