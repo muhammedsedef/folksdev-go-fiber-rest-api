@@ -1,6 +1,6 @@
 # Fiber & Middleware & Validation
 
-This repository contains the source code discussed in the [Fiber & Middleware & Validation](https://www.youtube.com/watch?v=lcs5TX2rNJU) 
+This repository contains the source code discussed in the [Fiber & Middleware & Validation](https://youtube.com/playlist?list=PLCp1YoRkzkpY8YbNC3g503S1Q3Dsg7eaD&si=H5ll7GgITXfMYCV3) 
 where we explored how to work with GoLang Fiber Framework, defining middleware, and performing validation on structs using the Validator library.
 
 ## Contents
