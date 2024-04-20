@@ -1,0 +1,13 @@
+{
+  "correlationId": "8398b6d4-1077-40f0-b583-e3617c0a8945",
+  "data": {
+    "userId": "539d43a0-8b9d-434f-a5f9-cb9caf72eb3a",
+    "firstName": "Muhammed",
+    "lastName": "Sedef"
+  },
+  "entityId": "539d43a0-8b9d-434f-a5f9-cb9caf72eb3a",
+  "eventId": "32f791dd-f273-11ee-aeb7-4e477169c3c1",
+  "eventOrigin": "folksdev",
+  "eventSource": "folksdev",
+  "eventTime": 1712228708531
+}

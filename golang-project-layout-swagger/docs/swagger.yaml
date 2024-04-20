@@ -1,0 +1,119 @@
+definitions:
+  request.UserCreteRequest:
+    properties:
+      age:
+        type: integer
+      email:
+        type: string
+      firstName:
+        minLength: 2
+        type: string
+      lastName:
+        type: string
+      password:
+        maxLength: 16
+        minLength: 8
+        type: string
+    required:
+    - age
+    - email
+    - firstName
+    - lastName
+    - password
+    type: object
+  response.UserResponse:
+    properties:
+      age:
+        type: integer
+      email:
+        type: string
+      firstName:
+        type: string
+      id:
+        type: string
+      lastName:
+        type: string
+    type: object
+info:
+  contact:
+    email: folksdev@gmail.com
+    name: Folksdev
+  description: This is a sample swagger for folksdev rest api
+  title: Folksdev Fiber Rest Api
+  version: "1.0"
+paths:
+  /api/v1/folksdev/user:
+    get:
+      consumes:
+      - application/json
+      description: get all users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/response.UserResponse'
+            type: array
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: This method used for get all users
+      tags:
+      - User
+    post:
+      consumes:
+      - application/json
+      description: saving new user
+      parameters:
+      - description: Handle Request Body
+        in: body
+        name: requestBody
+        schema:
+          $ref: '#/definitions/request.UserCreteRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: This method used for saving new user
+      tags:
+      - User
+  /api/v1/folksdev/user/{userId}:
+    get:
+      consumes:
+      - application/json
+      description: get user by id
+      parameters:
+      - description: userId
+        in: path
+        name: userId
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.UserResponse'
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: This method get user by given id
+      tags:
+      - User
+swagger: "2.0"
