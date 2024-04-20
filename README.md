@@ -11,3 +11,4 @@ under this repository.
 
 ## You can find all the source codes of the live broadcast below, in order of publication 👇
 - [Part 1: Fiber - Middleware - Validation](golang-fiber-middleware-validation)
+- [Part 2: Project Layout - Swagger ](golang-project-layout-swagger)
