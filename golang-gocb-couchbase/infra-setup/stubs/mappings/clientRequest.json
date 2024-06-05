@@ -1,0 +1,18 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/app/v1/folksdev/user"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8",
+          "Content-Encoding": "UTF-8"
+        },
+        "status": 200,
+        "bodyFileName": "duedateresponse.json"
+      }
+    }
+  ]
+}
