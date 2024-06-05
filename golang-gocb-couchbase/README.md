@@ -7,7 +7,7 @@ Here, we talked about what couchbase is, one of the nosql databases, how to impl
 - **Couchbase**:
 ![](git-images/couchbase_bucket_scope_collection.png)
 - **Couchbase Server With Docker**:
-    - Inside the [infra-setup -> docker-compose.yml](docker-compose.yml) directory, you can find couchbase docker image for running couchbase 
+    - Inside the [infra-setup -> docker-compose.yml](infra-setup/docker-compose.yml) directory, you can find couchbase docker image for running couchbase 
   on your locale machine
     - Open new terminal and Navigate to the infra-setup folder: Use the cd command to change the directory to your infra-setup folder. For example:
       `cd path/to/your/infra-setup`
@@ -15,11 +15,11 @@ Here, we talked about what couchbase is, one of the nosql databases, how to impl
   the Couchbase service as defined in your docker-compose.yml file.
   
 - **Connecting Local Couchbase Cluster**:
-    - Inside the [internal -> folsdev-fiber-rest-api -> pkg -> couchbase](couchbase.go) directory, you can find sample code demonstrating 
+    - Inside the [internal -> folsdev-fiber-rest-api -> pkg -> couchbase](internal/folksdev-fiber-rest-api/pkg/couchbase/couchbase.go) directory, you can find sample code demonstrating 
   how to connect couchbase.
 
 - **Database Operations**:
-    - Inside the [internal -> folsdev-fiber-rest-api -> application -> repository](userRepository.go) directory, you can find sample code demonstrating
+    - Inside the [internal -> folsdev-fiber-rest-api -> application -> repository](internal/folksdev-fiber-rest-api/application/repository/userRepository.go) directory, you can find sample code demonstrating
   for how to write query on couchbase database
      
 
@@ -27,7 +27,7 @@ Here, we talked about what couchbase is, one of the nosql databases, how to impl
 - Before start to test example, be sure you're done [Requirements](../README.md) step
 
 1. **Run Docker Compose File**:
-    - Be sure you run [docker-compose.yml](docker-compose.yml) file
+    - Be sure you run [docker-compose.yml](infra-setup/docker-compose.yml) file
     - Check the localhost path on browser http://localhost:8091/ 
 
 2. **Set Up Local Couchbase Server**:
