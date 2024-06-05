@@ -4,6 +4,8 @@ This repository contains the source code discussed in the [Gocb Couchbase SDK](h
 Here, we talked about what couchbase is, one of the nosql databases, how to implement couchbase and how to use gocb sdk with golang project
 
 ## Contents
+- **Couchbase**:
+![](git-images/couchbase_bucket_scope_collection.png)
 - **Couchbase Server With Docker**:
     - Inside the [infra-setup -> docker-compose.yml](docker-compose.yml) directory, you can find couchbase docker image for running couchbase 
   on your locale machine
@@ -36,3 +38,10 @@ Here, we talked about what couchbase is, one of the nosql databases, how to impl
 3. **Database Operations**:
     - To run the database operations Run the command `go run main.go` to execute the example.
     - Visit `http://localhost:8080` in your browser or use postman collection to trigger endpoint 
+
+## Useful Documents
+- **[Bucket & Scopes & Collections](https://docs.couchbase.com/cloud/clusters/data-service/about-buckets-scopes-collections.html)** 
+- **[Gocb Github](https://github.com/couchbase/gocb)** 
+- **[Gocb SDK Documentation](https://pkg.go.dev/github.com/couchbase/gocb/v2#section-readme)** 
+- **[Couchbase Go SDK](https://docs.couchbase.com/go-sdk/current/hello-world/start-using-sdk.html)** 
+
